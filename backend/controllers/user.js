@@ -1,3 +1,5 @@
 exports.home = (req, res) => {
-  res.send("Welcome to the user section");
+  res.status(200).json({
+    message: "Welcome to the user section",
+  });
 };
