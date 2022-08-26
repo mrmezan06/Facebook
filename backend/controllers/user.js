@@ -3,6 +3,7 @@ const { validateLength } = require("../helpers/validation");
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
 const { generateToken } = require("../helpers/token");
+const { sendVerificationEmail } = require("../helpers/mailer");
 
 exports.register = async (req, res) => {
   try {
@@ -75,9 +76,22 @@ exports.register = async (req, res) => {
       "30m"
     );
 
-    console.log(emailVerficationToken);
+    // console.log(emailVerficationToken);
+    const url = `${process.env.BASE_URL}/activate/${emailVerficationToken}`;
+    sendVerificationEmail(user.email, user.first_name, url);
+    const token = generateToken({ id: user._id.toString() }, "7d");
 
-    res.status(200).json(user);
+    res.send({
+      id: user._id,
+      username: user.username,
+      picture: user.picture,
+      first_name: user.first_name,
+      last_name: user.last_name,
+      token: token,
+      verified: user.verified,
+      message:
+        "Registration Successfull ! Please activate your email to explore more",
+    });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }

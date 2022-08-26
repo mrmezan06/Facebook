@@ -1,5 +1,3 @@
-import { LiveVideo } from "./svg";
-
 function App() {
   const get = async () => {
     const response = await fetch("http://localhost:8000/");
@@ -8,12 +6,7 @@ function App() {
   };
 
   get();
-  return (
-    <div>
-      welcome to frontend
-      <LiveVideo color="red" />
-    </div>
-  );
+  return <div>welcome to frontend</div>;
 }
 
 export default App;
