@@ -2,6 +2,7 @@ const { validateEmail, validateUsername } = require("../helpers/validation");
 const { validateLength } = require("../helpers/validation");
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
+const { generateToken } = require("../helpers/token");
 
 exports.register = async (req, res) => {
   try {
@@ -50,7 +51,7 @@ exports.register = async (req, res) => {
     }
     // Password encryption using bcrypt
     const cryptPassword = await bcrypt.hash(password, 12);
-    console.log(cryptPassword);
+    //console.log(cryptPassword);
 
     // Username validation
     const tempUsername = first_name.toLowerCase();
@@ -66,6 +67,15 @@ exports.register = async (req, res) => {
       bDay,
       gender,
     }).save();
+
+    const emailVerficationToken = generateToken(
+      {
+        id: user._id.toString(),
+      },
+      "30m"
+    );
+
+    console.log(emailVerficationToken);
 
     res.status(200).json(user);
   } catch (error) {

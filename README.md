@@ -20,6 +20,10 @@ It is a custom server that can be used to create update delete user and run the 
 
 ![Username Validation](./Username-Validation.png)
 
+## JWT Token (./helpers/Validation.js)
+
+![JWT Token](./jwt-token.png)
+
 ## Server.js
 
 ![Server](./Server.png)
