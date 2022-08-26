@@ -1,4 +1,4 @@
-const { validateEmail } = require("../helpers/validation");
+const { validateEmail, validateUsername } = require("../helpers/validation");
 const { validateLength } = require("../helpers/validation");
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
@@ -52,12 +52,15 @@ exports.register = async (req, res) => {
     const cryptPassword = await bcrypt.hash(password, 12);
     console.log(cryptPassword);
 
+    // Username validation
+    const tempUsername = first_name.toLowerCase();
+    let newUsername = await validateUsername(tempUsername);
     const user = await new User({
       first_name,
       last_name,
       email,
-      username,
-      password,
+      username: newUsername,
+      password: cryptPassword,
       bYear,
       bMonth,
       bDay,

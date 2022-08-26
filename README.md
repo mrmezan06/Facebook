@@ -16,6 +16,10 @@ It is a custom server that can be used to create update delete user and run the 
 
 ![User Model Schema](./User-Model.png)
 
+## Username Validation (./helpers/Validation.js)
+
+![Username Validation](./Username-Validation.png)
+
 ## Server.js
 
 ![Server](./Server.png)
