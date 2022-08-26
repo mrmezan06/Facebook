@@ -4,6 +4,10 @@
 
 It is a custom server that can be used to create update delete user and run the facebook clone application.
 
+## Email Validation
+
+![Email Validation Snippet](./Email-Validation.png)
+
 ## Requirements
 
 - [x] Node.js
