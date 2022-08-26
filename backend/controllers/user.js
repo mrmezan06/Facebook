@@ -69,6 +69,7 @@ exports.register = async (req, res) => {
       gender,
     }).save();
 
+    // Generate token
     const emailVerficationToken = generateToken(
       {
         id: user._id.toString(),
@@ -76,7 +77,7 @@ exports.register = async (req, res) => {
       "30m"
     );
 
-    // console.log(emailVerficationToken);
+    // Email verification
     const url = `${process.env.BASE_URL}/activate/${emailVerficationToken}`;
     sendVerificationEmail(user.email, user.first_name, url);
     const token = generateToken({ id: user._id.toString() }, "7d");

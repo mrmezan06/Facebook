@@ -20,9 +20,19 @@ It is a custom server that can be used to create update delete user and run the 
 
 ![Username Validation](./Username-Validation.png)
 
-## JWT Token (./helpers/Validation.js)
+## JWT Token (./helpers/token.js)
 
-![JWT Token](./jwt-token.png)
+- Generate Token
+  ![Generate From Controller](./Token_Generate.png)
+- Token Generator
+  ![JWT Token](./jwt-token.png)
+
+## Email Verification (./helpers/mailer.js)
+
+- UserController.js
+  ![Email Verification From Controller](./Email-Verification.png)
+- Mailer
+  ![Mailer](./Mailer.png)
 
 ## Server.js
 

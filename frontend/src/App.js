@@ -6,7 +6,7 @@ function App() {
   };
 
   get();
-  return <div>welcome to frontend</div>;
+  return <div>Welcome to frontend</div>;
 }
 
 export default App;
