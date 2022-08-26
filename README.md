@@ -4,9 +4,21 @@
 
 It is a custom server that can be used to create update delete user and run the facebook clone application.
 
-## Email Validation
+## Email Validation (./helpers/Validation.js)
 
 ![Email Validation Snippet](./Email-Validation.png)
+
+## Length Validation (./helpers/Validation.js)
+
+![Length Validation Snippet](./Length-Validation.png)
+
+## User Model Schema (./models/user.js)
+
+![User Model Schema](./User-Model.png)
+
+## Server.js
+
+![Server](./Server.png)
 
 ## Requirements
 
