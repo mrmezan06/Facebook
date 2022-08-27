@@ -1,6 +1,8 @@
+import "./style.css";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Formik, Form } from "formik";
+import LoginInput from "../../components/input/loginInput";
 
 function Login() {
   return (
@@ -18,17 +20,29 @@ function Login() {
               <Formik>
                 {(formik) => (
                   <Form>
-                    <input type="text" />
-                    <input type="text" />
-                    <button type="submit">Login</button>
+                    <LoginInput
+                      type="text"
+                      name="email"
+                      placeholder="Email address or Phone number"
+                    />
+                    <LoginInput
+                      type="password"
+                      name="password"
+                      placeholder="Password"
+                    />
+                    <button type="submit" className="blue_btn">
+                      Login
+                    </button>
                   </Form>
                 )}
               </Formik>
-              <Link to="/forgot">Forgotten password? Reset here.</Link>
+              <Link to="/forgot" className="forgot_password">
+                Forgotten password? Reset here.
+              </Link>
               <div className="sign_splitter"></div>
               <button className="blue_btn open_signup">Create Account</button>
             </div>
-            <Link to="/">
+            <Link to="/" className="sign_extra">
               <b>Create a Page</b> for a celebrity, brand or business
             </Link>
           </div>
