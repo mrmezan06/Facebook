@@ -1,4 +1,4 @@
-# Facebook Server
+# Facebook Server ![](https://img.shields.io/badge/Project-Running-orange) ![](https://img.shields.io/badge/Build-Passed-brightgreen)
 
 ## Description
 
