@@ -22,3 +22,10 @@
 npm start
 npm run build
 ```
+
+## Social Media
+
+<a href="https://facebook.com/mejanur.mezan.3">![Facebook](https://img.shields.io/badge/Facebook-%231877F2?style=for-the-badge&logo=Facebook&logoColor=white)</a> &nbsp;
+<a href="https://twitter.com/MejanurMezan">![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)</a> &nbsp;
+<a href="https://www.linkedin.com/in/mejanur-rahman-061998/">![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white)</a> &nbsp;
+<a href="https://instagram.com/mejanur.mezan.3">![Instagram](https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=Instagram&logoColor=white)</a> &nbsp;
