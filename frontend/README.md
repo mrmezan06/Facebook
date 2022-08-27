@@ -8,6 +8,10 @@
 
 ![AppJS](./AppJS-Setup.png)
 
+## User Reducer Basic Setup
+
+![User Reducer](./user-Reducer-basic.png)
+
 ## Server Start & build
 
 ```bash
