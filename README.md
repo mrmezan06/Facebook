@@ -38,6 +38,10 @@ It is a custom server that can be used to create update delete user and run the 
 
 ![Account Activation](./Account-activation.png)
 
+## Login Action (./controller/user.js)
+
+![Login Action](./Login-Action.png)
+
 ## Server.js
 
 ![Server](./Server.png)
