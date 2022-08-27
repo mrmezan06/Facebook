@@ -12,6 +12,10 @@
 
 ![User Reducer](./user-Reducer-basic.png)
 
+## Login Handler Function On Change Input
+
+![Input Change Method](./handleLoginFunction.png)
+
 ## Server Start & build
 
 ```bash
