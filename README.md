@@ -34,6 +34,10 @@ It is a custom server that can be used to create update delete user and run the 
 - Mailer
   ![Mailer](./Mailer.png)
 
+  ## Account Activation (./controller/user.js)
+
+![Account Activation](./Account-activation.png)
+
 ## Server.js
 
 ![Server](./Server.png)
