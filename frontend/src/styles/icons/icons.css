@@ -738,3 +738,11 @@
   height: 16px;
   background-position: 0 -60px;
 }
+.error_icon {
+  background-image: url(../../../public/icons/icons10.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 21px;
+  width: 21px;
+}
