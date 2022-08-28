@@ -69,3 +69,33 @@
 .sign_extra {
   font-size: 15px;
 }
+
+/* Media Query */
+@media (min-width: 850px) {
+  .login_wrap {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .login_1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 15vh;
+  }
+  .login_1 img {
+    width: 300px;
+    margin-left: -1.7rem;
+  }
+
+  .login_1 span {
+    font-size: 20px;
+  }
+  .login_2_wrap {
+    width: 400px;
+  }
+  .input_wrap {
+    width: 360px !important;
+  }
+}
