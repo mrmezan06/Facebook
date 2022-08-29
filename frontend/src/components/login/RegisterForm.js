@@ -77,6 +77,53 @@ const RegisterForm = () => {
                   </select>
                 </div>
               </div>
+              <div className="reg_col">
+                <div className="reg_line_header">
+                  Gender
+                  <i className="info_icon"></i>
+                </div>
+                <div className="reg_grid">
+                  <label htmlFor="male">
+                    Male
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="male"
+                      value="male"
+                      onChange={handleRegisterChange}
+                    />
+                  </label>
+                  <label htmlFor="female">
+                    Female
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="female"
+                      value="female"
+                      onChange={handleRegisterChange}
+                    />
+                  </label>
+                  <label htmlFor="custom">
+                    Custom
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="custom"
+                      value="custom"
+                      onChange={handleRegisterChange}
+                    />
+                  </label>
+                </div>
+              </div>
+              <div className="reg_info">
+                By clicking Sign Up, you agree to our{" "}
+                <span>Terms, Data Policy &nbsp;</span> and
+                <span>Cookies Policy.</span> You may receive SMS Notifications
+                from us and can opt out any time.
+              </div>
+              <div className="reg_btn_wrapper">
+                <button className="blue_btn open_signup">Sign Up</button>
+              </div>
             </Form>
           )}
         </Formik>
