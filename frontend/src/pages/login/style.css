@@ -3,23 +3,19 @@
 }
 
 .login_wrap {
-  height: 70vh;
+  height: 78vh;
   color: var(--color-primary);
 }
-
 .login_1 {
   width: 300px;
   margin: 0 auto;
 }
-
 .login_1 span {
   font-size: 20px;
 }
-
 .login_2 {
   text-align: center;
 }
-
 .login_2_wrap {
   display: flex;
   flex-direction: column;
@@ -32,45 +28,94 @@
   width: 350px;
   height: fit-content;
   margin: 1rem auto;
+  user-select: none;
   border-radius: 10px;
 }
-
 .login_2_wrap button {
   width: 100%;
   height: 50px;
   font-size: 17px;
   font-weight: 700;
 }
-
 .forgot_password {
   color: var(--blue-color);
   font-size: 14px;
   cursor: pointer;
 }
-
 .forgot_password:hover {
   text-decoration: underline;
 }
-
 .sign_splitter {
   width: 100%;
   height: 1px;
   background: var(--bg-third);
 }
-
 .open_signup {
   background: var(--green-color);
   width: 70% !important;
   font-weight: 600 !important;
   font-size: 17px !important;
-  margin-top: 1rem !important;
+  margin-top: 1rem;
 }
-
 .sign_extra {
   font-size: 15px;
 }
 
-/* Media Query */
+/*----Footer------*/
+.login_footer {
+  height: 22vh;
+  background: var(--bg-primary);
+  padding: 1.5rem;
+}
+.login_footer_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 10px;
+  font-size: 13px;
+  color: var(--color-secondary);
+  max-width: 350px;
+  margin: 0 auto;
+}
+.login_footer_wrap a {
+  display: flex;
+  align-items: center;
+}
+.login_footer_wrap a:hover {
+  text-decoration: underline;
+}
+.footer_square {
+  background: var(--bg-secondary);
+  height: 19px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--bg-third);
+}
+.footer_square i {
+  transform: scale(0.8);
+  -webkit-filter: invert(40%);
+}
+.footer_splitter {
+  width: 100%;
+  height: 1px;
+  background: var(--bg-third);
+  margin: 10px auto;
+  max-width: 900px;
+}
+/*----End Footer------*/
+
+/*----Media queries--------------*/
+@media (min-width: 539px) {
+  .login_footer_wrap {
+    max-width: 520px;
+  }
+}
+@media (min-width: 650px) {
+  .login_footer_wrap {
+    max-width: 650px;
+  }
+}
 @media (min-width: 850px) {
   .login_wrap {
     display: flex;
@@ -88,9 +133,8 @@
     width: 300px;
     margin-left: -1.7rem;
   }
-
   .login_1 span {
-    font-size: 20px;
+    font-size: 28px;
   }
   .login_2_wrap {
     width: 400px;
@@ -98,4 +142,8 @@
   .input_wrap {
     width: 360px !important;
   }
+  .login_footer_wrap {
+    max-width: 900px;
+  }
 }
+/*----Media queries--------------*/
