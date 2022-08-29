@@ -58,9 +58,11 @@ function LoginForm() {
                   onChange={handleLoginChange}
                   bottom={true}
                 />
-                <button type="submit" className="blue_btn">
-                  Login
-                </button>
+                <div className="login_btn_wrapper">
+                  <button type="submit" className="blue_btn">
+                    Login
+                  </button>
+                </div>
               </Form>
             )}
           </Formik>
@@ -68,7 +70,9 @@ function LoginForm() {
             Forgotten password? Reset here.
           </Link>
           <div className="sign_splitter"></div>
-          <button className="blue_btn open_signup">Create Account</button>
+          <div className="create_btn_wrapper">
+            <button className="blue_btn open_signup">Create Account</button>
+          </div>
         </div>
         <Link to="/" className="sign_extra">
           <b>Create a Page</b> for a celebrity, brand or business

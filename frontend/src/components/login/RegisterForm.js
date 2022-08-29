@@ -117,7 +117,7 @@ const RegisterForm = () => {
               </div>
               <div className="reg_info">
                 By clicking Sign Up, you agree to our{" "}
-                <span>Terms, Data Policy &nbsp;</span> and
+                <span>Terms, Data Policy &nbsp;</span> and{" "}
                 <span>Cookies Policy.</span> You may receive SMS Notifications
                 from us and can opt out any time.
               </div>

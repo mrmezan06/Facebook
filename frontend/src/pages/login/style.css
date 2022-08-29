@@ -51,13 +51,32 @@
   height: 1px;
   background: var(--bg-third);
 }
+.login_btn_wrapper {
+  width: 70%;
+  height: 50px;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 0 auto;
+}
+.create_btn_wrapper {
+  margin: 1rem auto 0 auto;
+  width: 100%;
+  height: 50px;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .open_signup {
   background: var(--green-color);
   width: 70% !important;
   font-weight: 600 !important;
   font-size: 17px !important;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
+
 .sign_extra {
   font-size: 15px;
 }
@@ -77,13 +96,12 @@
   height: fit-content;
   color: var(--color-primary);
 }
-
 .register_header {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--bg-third);
 }
 .register_header i {
@@ -91,24 +109,20 @@
   right: 0;
   cursor: pointer;
 }
-
 .register_header span:first-of-type {
-  font-size: 32px;
   font-weight: 700;
+  font-size: 32px;
 }
-
 .register_header span:last-of-type {
   font-size: 15px;
   color: var(--color-secondary);
 }
-
 .register_form {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .reg_line {
   padding: 7px 0;
   display: flex;
@@ -127,6 +141,9 @@
   gap: 2px;
   font-size: 13px;
   color: var(--color-secondary);
+}
+.reg_line_header i {
+  margin-top: 3px;
 }
 .reg_grid {
   margin-top: 5px;
@@ -159,6 +176,20 @@
 .reg_info {
   font-size: 11px;
   margin-top: 10px;
+  color: var(--color-secondary);
+}
+.reg_info span {
+  color: var(--blue-color);
+}
+.reg_btn_wrapper {
+  width: 100%;
+  height: 50px;
+  /* border: 1px solid red; */
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 10px 0;
 }
 /* End Register Form */
 

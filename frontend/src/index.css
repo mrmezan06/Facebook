@@ -52,6 +52,7 @@ a {
   justify-content: center;
   gap: 6px;
   cursor: pointer;
+  height: 100%;
 }
 /* End Button */
 
